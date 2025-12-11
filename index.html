@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First GitHub Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">MySite</a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🚀 Welcome to My First Website</h1>
+                <p>This is my first website hosted on GitHub Pages. You can easily modify and customize it!</p>
+                <div class="buttons">
+                    <a href="#about" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-box">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>index.html</span>
+                    </div>
+                    <pre><code>&lt;!-- Simple Website Code --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;My first website&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">📖 About This Site</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-code fa-3x"></i>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Built with modern web standards</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt fa-3x"></i>
+                    <h3>Responsive</h3>
+                    <p>Works on all devices</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt fa-3x"></i>
+                    <h3>Fast Loading</h3>
+                    <p>Optimized for speed</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-github fa-3x"></i>
+                    <h3>GitHub Pages</h3>
+                    <p>Free hosting forever</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">💡 What You Can Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="number">01</div>
+                    <h3>Edit Content</h3>
+                    <p>Change text, images, and colors easily</p>
+                </div>
+                <div class="service-card">
+                    <div class="number">02</div>
+                    <h3>Add Pages</h3>
+                    <p>Create new pages like blog or portfolio</p>
+                </div>
+                <div class="service-card">
+                    <div class="number">03</div>
+                    <h3>Deploy Online</h3>
+                    <p>Publish instantly on GitHub Pages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">📞 Contact</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message..." rows="5" required></textarea>
+                    <button class="btn btn-primary" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </div>
+                <div class="contact-info">
+                    <h3>Website Info</h3>
+                    <div class="info-item">
+                        <i class="fas fa-link"></i>
+                        <span>URL: <span id="site-url">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>Today: <span id="current-date">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Created: <span id="create-time">Loading...</span></span>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Me:</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-codepen"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>✨ Made with ❤️ | Free Educational Project ✨</p>
+            <p>© <span id="current-year"></span> - All rights reserved</p>
+            <p class="github-link">
+                <i class="fab fa-github"></i> 
+                Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Message Modal -->
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3><i class="fas fa-check-circle"></i> Success!</h3>
+            <p id="modal-message">Your message has been sent!</p>
+            <button class="btn btn-primary" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
